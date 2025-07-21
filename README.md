@@ -1,15 +1,6 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
-# export it in docs friendly format
-
-Below is your **React Take-Home Assignment** in a **Google Docs/Word-friendly format**—structured with headings, clearly labeled sections, and space for answers. You can copy-paste this directly into Google Docs or Microsoft Word for easy sharing, formatting, and PDF export.
-
 # React Take-Home Assignment
 
 ## Job Platform Company – Candidate Assessment
-
-**Candidate Name:** ______________________
-**Submission Date:** ______________________
 
 ## 1. Conceptual Questions
 
@@ -38,7 +29,7 @@ Below is your **React Take-Home Assignment** in a **Google Docs/Word-friendly fo
     - Each card should have a **"Save Job"** button. Saved jobs appear in a separate section ("Saved Jobs").
     - Ensure basic **responsive design**.
 
-**Bonus (optional):**
+**Bonus:**
 
 - Debounce the search input.
 - Show loading and error UI states.
@@ -91,6 +82,7 @@ function JobList({ jobs }) {
 
 ## Submission Checklist
 
+- [ ] Fork the repo
 - [ ] App source code (GitHub link or ZIP)
 - [ ] Written answers (README.md or PDF)
 - [ ] Setup instructions
