@@ -98,5 +98,4 @@ function JobList({ jobs }) {
 - Clarity and depth of written answers
 
 **Good luck!**
-_You may format this document for clarity and PDF export._
 
