@@ -1,0 +1,232 @@
+/* Root theme variables */
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --success-color: #10b981;
+  --danger-color: #ef4444;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --border-color: #e5e7eb;
+  --bg-light: #f3f4f6;
+  --bg-white: #ffffff;
+  --shadow-light: rgba(0, 0, 0, 0.06);
+  --font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f9fafb;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* App title */
+.app-title {
+  font-family: 'Poppins', sans-serif; /* or 'Montserrat', 'Roboto Slab', 'Oswald' */
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50; /* Dark shade for contrast */
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Search bar */
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 0.75rem;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Optional: Loading & error messages */
+.loading,
+.error {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.loading {
+  color: var(--primary-color);
+}
+
+.error {
+  color: var(--danger-color);
+}
+
+/* Layout */
+.main-section {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Job list */
+.job-list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.job-list-heading{
+  font-family: 'Poppins', sans-serif; /* or 'Montserrat', 'Oswald' */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Saved jobs sidebar */
+.saved-jobs {
+  flex: 1;
+  padding-left: 2rem;
+  border-left: 2px solid var(--border-color);
+}
+
+.saved-jobs h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+/* Job card */
+.job-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  margin: 0.25rem 0;
+  color: var(--text-light);
+}
+
+/* Save button */
+.save-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+.save-btn:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+.save-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Saved job card */
+.saved-job-card {
+  background-color: var(--bg-light);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+.saved-job-card:hover {
+  background-color: #e0e7ff;
+}
+
+.saved-job-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.saved-job-card p {
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+  }
+
+  .saved-jobs {
+    padding-left: 0;
+    border-left: none;
+    border-top: 2px solid var(--border-color);
+    padding-top: 1.5rem;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
